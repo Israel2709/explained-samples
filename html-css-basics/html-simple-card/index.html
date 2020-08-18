@@ -1,0 +1,26 @@
+<!--1* Esta es la estructura básica de HTML. HTML es un lenguaje que fuciona a través de etiquetas, cada etiqueta representa un elemento específico de HTML (párrafos, botones, navegaciones, etc) -->
+
+<!DOCTYPE html><!--2* La etiqueta DOCTYPE es necesaria para especificar el tipo de documento que estamos trabajando, en este caso HTML-->
+<html lang="en"><!--3* La etiqueta html sirve para delimitar el cuerpo de nuestro documento, es el contenedor principal de el documento completo-->
+<head><!--4* head es la cabeza del documento, en ella se inserta la información necesaria para que el navegador pueda interpretar de forma adecuada nuestro documento (links a hojas de estilos, metatags, título, etc). Aquí NO se insertan tags de elementos de html-->
+    <meta charset="UTF-8"><!--5* Los metatag contienen metadatos necesarios para que el navegador tenga una interpretación más precisa de nuestro documento (funcionan para keywords de SEO por ejemplo, entre otras cosas). En este caso el metatag charset indica que usaremos el set de caracteres bajo la norma UTF-8, la cual contiene todos los caracteres universales disponibles-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--6* metatag necesario para que el navegador pueda interpretar nuestros mediaqueries de forma adecuada-->
+    <title>Document</title><!--7* Título del documento, es el que aparece en la pestaña del navegador al abrirlo-->
+    <link rel="stylesheet" href="css/style.css"><!--Dentro del head del documento, el tag "link" sirve para indicar a nuestro documento que se conectará con un recurso externo, en este caso una hoja de estilos CSS. El atribto rel indica el tipo de archivo que estamos linkeando (es opcional) y el atributo href indica la ruta donde se encuentra alojado el archivo que vamos a linkear-->
+</head><!--4*-->
+<body><!--8* El tag body es el encargado de conener todo lo que queremos que se visulice en nuestro HTML. Dentro de él es donde debemos insertar los tags de HTML correspondientes a los elementos que deseamos mostrar-->
+    
+    <!--9* en html definimos estructuras con diferentes elementos, cada elemento sirve para insertar algo específico como mencionabamos arriba. Juntar varios elementos en un grupo nos permite crear un "componente" como lo es en este caso nuestra tarjeta simple-->
+    <!--10* es conveniente que cada uno de nuestros componentes esten agrupados dentro de un contenedor general, de manera que podamos anidar y controlar los estilos de nuestro componente de forma eficiente-->
+    <div class="simple-card-wrapper"><!--11* el tag div sirve para crear un elemento genérico, una division genérica en mi html, en este caso usamos div para crear un contenedor para nuestro component. "class" es un atributo de html que me permite agregar un elemento específico ( en este caso el div ) en una clase, lo cual me permitirá personalizar los estilos de este elemento a través de CSS, entre otras funciones-->
+        <img class="card-img" src="" alt=""><!--12* el tag img sirve para insertar una imagen. Su atributo src permite indicar la ruta en la que se encuentra guardada la imagen a mostrar-->
+        <h2 class="card-title">Some title</h2><!--13* el tag h2 sirve para indicar un encabezado de 2o nivel (ver html heading tags)-->
+        <p class="card-text"><!--14* el tag p sive para indicar un párrafo de texto ( ver html basic tags )-->
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, voluptates.
+        </p>
+        <a class="card-link" href="#">Some link</a><!--15* el tag a nos sirve para indicar un hipervínculo hacia un recurso externo, por ejemplo otro sitio web. La ruta del recurso externo se define como valor del atributo "href" -->
+    </div><!--11*-->
+    
+</body><!--8*-->
+</html><!--3*-->
+<!--1*-->
